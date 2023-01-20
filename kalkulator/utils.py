@@ -1,15 +1,16 @@
-from sys import platform
+from platform import system as OS
 from os import system
 
 def bersihkan_terminal():
-	if(platform in ["linux", "linux2"]):
+	if OS() in ["Linux", "Darwin"]:
 		system("clear")
-	else:
+	elif OS() == "Windows":
 		system("cls")
+	else:
+		system("clear")
+		
 
 def run(q: str, f):
 	f()
 	while input(q) in ["ya", "Y", "y"]:
 		f()
-	else:
-		pass
