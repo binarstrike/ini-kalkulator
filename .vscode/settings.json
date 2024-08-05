@@ -3,7 +3,7 @@
     "editor.fontLigatures": true,
     "python.analysis.typeCheckingMode": "basic",
     "[python]": {
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions": "off",
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
         "editor.indentSize": "tabSize"
